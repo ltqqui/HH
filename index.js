@@ -7,10 +7,10 @@ $(document).ready(function(){
     function kiemTraMa(){
         var mauKT=/[0-9]{9}$/;
         if(mauKT.test($("#txtMa").val())==true){
-            // alert("Bạn nhập đúng")
+            alert("Bạn nhập đúng")
         }
         else{
-        // alert("Bạn nhập sai")
+        alert("Bạn nhập sai")
         }
     }
     
