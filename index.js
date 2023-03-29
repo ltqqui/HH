@@ -1,5 +1,6 @@
 $(document).ready(function(){
     var i=1;
+    var giam=0;
     $("#btnModal").click(function(){
         $("#myModal").modal('show');
     })
@@ -78,6 +79,8 @@ $(document).ready(function(){
     $("input[name='giam']").change(function(){
         var tong = parseFloat($("#txtKQ").val())+parseFloat($("#txtGiaDV").val()) - parseFloat($(this).val());
         $("#txtTong").val(tong)
+        giam=$(this).val()
+        console.log($(this).val())
     });
      $("#btnSave").click(function(){
         
@@ -87,7 +90,7 @@ $(document).ready(function(){
         var dc=$("#txtDC").val();
         var tdv=$("#txtGiaDV").val();  
         var tdd=$("#txtKQ").val();
-        var giam=$("input[name='giam']").val();
+        //  giam=$("input[name='giam']").change().val();
         var tong=$("#txtTong").val();
         var them =`
         <tr>
